@@ -1,109 +1,77 @@
-body {
-	font-family: Cambria Math;
+
+header {
+	background-color: #33cc33;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 300px;
+	padding-right: 300px;
+	width: auto;
+	display: grid;
+	grid-area: header;
 }
 
-.border-bottom-2 {
-	border-bottom: 3px solid #595959;
+image {
+	border-radius: 50%;
+	position: center;
 }
 
-
-.border-bottom {
-	border-bottom: 2px solid #E8E3E3;
-
-}
-
-.bio-content {
+p {
 	text-align: justify;
 }
 
-.box {
-	background-color: #D9D3D3;
-	color: black;
-	float: left;
+.edu {
+	border-bottom-width: 5px;
 }
 
-.dates {
-	text-align: left;
-	font-weight: bold;  
-}
-
-.fb {
-	list-style-image: url(https://www.google.com.jm/search?q=fb+logo&source=lnms&tbm=isch&sa=X&ved=0ahUKEwif3oXR1_3dAhWQtVkKHafIBfMQ_AUIDigB&biw=1366&bih=626#imgrc=Yd_H1eMmFj5SEM.png);
-
-}
-
-.grid {
-	grid-template-columns: 20% 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: 
-	"header-box header-box"
-	"left-grid right-grid";
-	display: grid;
-	grid-gap: 1px;
-}
-
-.header-box {
-	border: 2px #008080 solid;
-	background-color: #008080;
-	align-items: center;
-	justify-content: center;
-	grid-area: header-box;
-	display: grid;
-	width: 1100px;
-	height: 200px;
-}
-
-.ig {
-	list-style-image: url(https://instagramersitalia.it/wp-content/uploads/album-di-instagram-1.jpg);
-}
-
-.image {
-	border-radius: 50%;
-	position: center;
-	width: 250px;
-	height: 250px;
-}
-
-.inner-box {
-	text-align: center;
-	color: white;
-	border: 1px solid white;
-	background-color: #008080;
-	display: flex; 
-	justify-content: center;
-	align-items: center;
-	height: 150px;
-	width: 900px;
-}
-
-.jobs, .schools, .bio, .skills {
+.eduHeading .skillsHeading .workExpHeading {
 	font-weight: bold;
-	text-align: left;
+	text-transform: uppercase;
 }
 
-.left-grid {
-	border: 2px #D9D3D3 solid;
+.innerBox {
+	text-align: center;
+	border: 5px solid white;
+	color: white;
+}
+
+.mainContent {
 	display: grid;
-	grid-area: left-grid;
-	max-height: 700px;
-	width: 250px;
+	grid-area: main;
+	padding: 20px;
+	width: 300px;
+	height: 1000px;
+	float: right;
 }
 
-.right-grid {
-	grid-area: right-grid;
+.profilePic {
+	text-align: center;
+}
+
+.sideBar {
 	display: grid;
-	max-height: 500px;
-	width: 800px;
+	background-color:  #e0e0d1;
+	grid-area: menu;
+	margin-left: 60px;
+	margin-top: 30px;	
+	padding: 20px;
+	width: 600px;
+	height: 1000px;
 }
 
-.tweet {
-	list-style-image: url(https://www.google.com.jm/search?biw=1366&bih=626&tbm=isch&sa=1&ei=euO-W-PVFcad5wLw2oyABQ&q=twitter+logo&oq=twitter+logo&gs_l=img.3..35i39k1j0l2j0i67k1j0l5j0i67k1.84276.87031.0.87697.9.9.0.0.0.0.305.1156.5j3j0j1.9.0....0...1c.1.64.img..0.9.1149...0i7i30k1j0i10k1.0.yoGRefKy9Vo#imgrc=r3Wvn65eUjf9gM.png);
-}
 
 .word-left {
-	float: left;
+	font-weight: bold;
 }
 
 .word-right {
 	float: right;
+	font-weight: bold;
 }
+
+.workSpace {
+	display: grid;
+	grid-template-areas: 'header header header header'
+	'menu main main main';
+}
+
+
