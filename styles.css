@@ -1,18 +1,21 @@
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+
+body {
+	font-family: Cambria Math;
+}
+
+h1 {
+	font-size: 16pt;
+}
 
 header {
 	background-color: #33cc33;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 2em;
+	padding-bottom: 3em;
 	padding-left: 300px;
 	padding-right: 300px;
-	width: auto;
-	display: grid;
-	grid-area: header;
-}
-
-image {
-	border-radius: 50%;
-	position: center;
+	display: flex;
+	justify-content: center;
 }
 
 p {
@@ -28,36 +31,50 @@ p {
 	text-transform: uppercase;
 }
 
-.innerBox {
+.innerHeaderBox {
 	text-align: center;
 	border: 5px solid white;
+	border-radius: 5em;
+	min-height: 1vh;
+	height: auto;
+	max-height: 3vh;
 	color: white;
+	padding: 3em;
+	font-size: 12pt;
 }
 
 .mainContent {
 	display: grid;
-	grid-area: main;
-	padding: 20px;
+	padding: 5em;
 	width: 300px;
 	height: 1000px;
 	float: right;
 }
 
 .profilePic {
-	text-align: center;
+	position: center;	
+	border-radius: 50%;
+	width: 60%;
 }
 
 .sideBar {
 	display: grid;
 	background-color:  #e0e0d1;
-	grid-area: menu;
 	margin-left: 60px;
 	margin-top: 30px;	
-	padding: 20px;
+	padding: 2.5em;
 	width: 600px;
 	height: 1000px;
 }
 
+.sideBar img.profilePic {
+	border-radius: 50%;
+	position: center;
+}
+
+.skillsUL {
+	columns: 2;
+}
 
 .word-left {
 	font-weight: bold;
@@ -70,8 +87,7 @@ p {
 
 .workSpace {
 	display: grid;
-	grid-template-areas: 'header header header header'
-	'menu main main main';
+	grid-template-columns:30% 70%;
 }
 
 
